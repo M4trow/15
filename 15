@@ -1,0 +1,53 @@
+1)<html>
+  <body>
+    <h1>Заголовок:</h1>
+    <ul>
+      <li>JavaScript</li>
+      <li>CSS</li>
+      <li>Html</li>
+      </ul>
+      </body>
+      </html>
+      
+      
+      //H1
+var text = "textContent" in document.body ? "textContent" : "innerText";
+let textH1 = document.getElementsByTagName("h1")[0][text];
+console.log(textH1)
+
+//UL
+text = "textContent" in document.body ? "textContent" : "innerText";
+textH1 = document.getElementsByTagName("ul")[0][text];
+console.log(textH1)
+
+//LI
+text = "textContent" in document.body ? "textContent" : "innerText";
+textH1 = document.getElementsByTagName("li")[0][text];
+console.log(textH1)
+
+2)
+<html>
+  <body>
+      <div>
+        <H1>BAN</H1>
+        <p>illia baruga</p>
+        <ul>
+          <li>1</li>
+          <li>2</li>
+        </ul>
+      </div>
+      <p>KABACHOK</p>
+  </body>
+</html>
+
+//1
+var text = "textContent" in document.body ? "textContent" : "innerText";
+let textH1 = document.getElementsByTagName("body")[0][text];
+console.log(textH1)
+
+//2
+var text = "textContent" in document.body ? "textContent" : "innerText";
+let textH1 = document.body.lastChild
+let textf = document.body.firstChild
+console.log(textH1)
+console.log(textf)
